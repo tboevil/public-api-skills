@@ -17,9 +17,11 @@ This API documentation is split into multiple files for on-demand loading.
 **Directory structure:**
 ```
 references/
-├── resources/      # 56 resource index files
-├── operations/     # 253 operation detail files
-└── schemas/        # 3 schema groups, 48 schema files
+├── resources/             # 56 resource index files
+├── operations/            # 253 operation detail files
+├── schemas/               # 3 schema groups, 48 schema files
+├── authentication.md      # auth methods
+└── mrkdwn-formatting.md   # Slack message format spec (read before posting messages)
 ```
 
 **Navigation flow:**
@@ -35,6 +37,12 @@ references/
 ## Authentication
 
 Supported methods: **slackAuth**. See `references/authentication.md` for details.
+
+## Message Formatting (mrkdwn)
+
+Slack uses **mrkdwn**, not CommonMark. Key differences: `*bold*` (single `*`), `_italic_`, `<url|text>` for links, `<@Uxxx>` / `<#Cxxx>` for mentions. `**bold**` and `[text](url)` render literal.
+
+Read `references/mrkdwn-formatting.md` before composing any message sent via `chat.postMessage`, `chat.postEphemeral`, `chat.scheduleMessage`, `chat.update`, `chat.meMessage`, or Block Kit `mrkdwn` sections.
 
 ## Resources
 

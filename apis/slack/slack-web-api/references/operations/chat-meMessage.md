@@ -5,6 +5,8 @@
 
 Share a me message into a channel.
 
+> **Formatting:** mrkdwn allowed in `text`; whole line renders italic. See [`mrkdwn-formatting.md`](../mrkdwn-formatting.md).
+
 ## Parameters
 
 | Name | In | Type | Required | Description |

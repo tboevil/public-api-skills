@@ -5,6 +5,8 @@
 
 Schedules a message to be sent to a channel.
 
+> **Formatting:** uses Slack mrkdwn. See [`mrkdwn-formatting.md`](../mrkdwn-formatting.md).
+
 ## Parameters
 
 | Name | In | Type | Required | Description |

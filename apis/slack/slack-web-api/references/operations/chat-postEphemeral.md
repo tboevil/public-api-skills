@@ -5,6 +5,8 @@
 
 Sends an ephemeral message to a user in a channel.
 
+> **Formatting:** uses Slack mrkdwn. See [`mrkdwn-formatting.md`](../mrkdwn-formatting.md).
+
 ## Parameters
 
 | Name | In | Type | Required | Description |

@@ -5,6 +5,8 @@
 
 Sends a message to a channel.
 
+> **Formatting:** `text` and Block Kit `mrkdwn` sections use Slack mrkdwn, not CommonMark. See [`mrkdwn-formatting.md`](../mrkdwn-formatting.md).
+
 ## Parameters
 
 | Name | In | Type | Required | Description |
