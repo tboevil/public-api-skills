@@ -5,7 +5,7 @@
 
 Updates a message.
 
-> **Formatting:** uses Slack mrkdwn. See [`mrkdwn-formatting.md`](../mrkdwn-formatting.md).
+> **Formatting:** uses Slack mrkdwn, not CommonMark. See [`mrkdwn-formatting.md`](../mrkdwn-formatting.md).
 
 ## Parameters
 

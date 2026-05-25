@@ -5,7 +5,7 @@
 
 Sends an ephemeral message to a user in a channel.
 
-> **Formatting:** uses Slack mrkdwn. See [`mrkdwn-formatting.md`](../mrkdwn-formatting.md).
+> **Formatting:** uses Slack mrkdwn, not CommonMark. See [`mrkdwn-formatting.md`](../mrkdwn-formatting.md).
 
 ## Parameters
 

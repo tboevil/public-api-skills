@@ -13,7 +13,7 @@
 		"generate:jira-server": "bunx openapi-to-skills ./apis/jira-server/openapi.json -o ./apis/jira-server -f",
 		"generate:pagerduty": "bunx openapi-to-skills ./apis/pagerduty/openapi.json -o ./apis/pagerduty -f",
 		"generate:shopify": "bunx openapi-to-skills ./apis/shopify/openapi.json -o ./apis/shopify -f",
-		"generate:slack": "bunx openapi-to-skills ./apis/slack/openapi.json -o ./apis/slack -f",
+		"generate:slack": "bunx openapi-to-skills ./apis/slack/openapi.json -o ./apis/slack -t ./apis/slack/templates -f && cp -r ./apis/slack/extras/* ./apis/slack/slack-web-api/",
 		"generate:stripe": "bunx openapi-to-skills ./apis/stripe/openapi.json -o ./apis/stripe -f",
 		"generate:testrail": "bunx openapi-to-skills ./apis/testrail/openapi.yaml -o ./apis/testrail --includeTags projects,suites,sections,cases,runs,plans,tests,results,statuses,users,milestones,attachments -f",
 		"generate:testrail:readonly": "bunx openapi-to-skills ./apis/testrail/openapi.yaml -o ./apis/testrail --name testrail-api-readonly --includeTags read -f",

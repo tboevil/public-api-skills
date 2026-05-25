@@ -5,6 +5,8 @@
 
 Deletes a message.
 
+> **Formatting:** uses Slack mrkdwn, not CommonMark. See [`mrkdwn-formatting.md`](../mrkdwn-formatting.md).
+
 ## Parameters
 
 | Name | In | Type | Required | Description |

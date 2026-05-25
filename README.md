@@ -62,6 +62,32 @@ The tool transforms monolithic OpenAPI specs into a navigable file structure:
     └── authentication.md
 ```
 
+## Customizing Generated Skills
+
+Generated files are overwritten on each `generate:*` run. To add API-specific content that survives regeneration, use **custom templates** and **extras**:
+
+```
+apis/<api-name>/
+├── openapi.json          # Source spec
+├── templates/            # Custom Eta templates (partial override)
+│   ├── skill.md.eta      # Only override templates you need to change
+│   └── operation.md.eta  # Falls back to defaults for the rest
+├── extras/               # Static files copied into output post-generation
+│   └── references/
+│       └── my-guide.md
+└── <skill-name>/         # Generated output (don't edit directly)
+```
+
+**Custom templates** use the `-t` flag. Only the templates you provide are overridden; the rest fall back to the built-in defaults. See `apis/slack/templates/` for an example.
+
+**Extras** are static files copied into the generated skill directory after generation. The generation script handles both steps:
+
+```bash
+bunx openapi-to-skills ./apis/slack/openapi.json -o ./apis/slack -t ./apis/slack/templates -f && cp -r ./apis/slack/extras/* ./apis/slack/slack-web-api/
+```
+
+Available template files to override: `skill.md.eta`, `operation.md.eta`, `resource.md.eta`, `schema.md.eta`, `schema-index.md.eta`, `authentication.md.eta`.
+
 ## Contributing
 
 Want to add an API? Requirements:

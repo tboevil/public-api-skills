@@ -5,7 +5,7 @@
 
 Share a me message into a channel.
 
-> **Formatting:** mrkdwn allowed in `text`; whole line renders italic. See [`mrkdwn-formatting.md`](../mrkdwn-formatting.md).
+> **Formatting:** uses Slack mrkdwn, not CommonMark. See [`mrkdwn-formatting.md`](../mrkdwn-formatting.md).
 
 ## Parameters
 
